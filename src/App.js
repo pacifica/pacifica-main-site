@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import PacificaCarousel from './Carousel.js';
+import PacificaAbout from './About.js';
+import PacificaDocs from './ReadTheDocs.js';
+import AlbatrossSave from './Save.js';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Router>
+          <div>
+            <Route exact path="/" component={PacificaCarousel} />
+            <Route path="/about" component={PacificaAbout} />
+            <Route path="/docs" component={PacificaDocs} />
+            <Route path="/save" component={AlbatrossSave} />
+          </div>
+        </Router>
       </div>
     );
   }
