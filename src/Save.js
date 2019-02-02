@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import PacificaHeader from './Header';
 
 class AlbatrossSave extends Component {
     render() {
         return (
             <div>
-              <h1>Save the Pacific Layson Albatros</h1>
-              <Link to="/">Home</Link>
+              <PacificaHeader header="Save the Pacific Layson Albatross" />
               <p>
-                Save the Pacific Layson Albatros by <a href="https://oceana.org/marine-life/seabirds/laysan-albatross">donating</a>. Also, you can <a href="https://www.theoceancleanup.com/">help</a> cleanup the <a href="https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch">Great Pacific Garbage Patch</a> killing the Layson Albatros.
+                Save the Pacific Layson Albatross by <a href="https://oceana.org/marine-life/seabirds/laysan-albatross">donating</a>. Also, you can <a href="https://www.theoceancleanup.com/">help</a> cleanup the <a href="https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch">Great Pacific Garbage Patch</a> killing the Layson Albatross.
               </p>
             </div>
         )

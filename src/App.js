@@ -9,15 +9,17 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
-          <div>
-            <Route exact path="/" component={PacificaCarousel} />
-            <Route path="/about" component={PacificaAbout} />
-            <Route path="/docs" component={PacificaDocs} />
-            <Route path="/save" component={AlbatrossSave} />
-          </div>
-        </Router>
+      <div className="aspectwrapper">
+        <div className="content">
+          <Router>
+            <div>
+              <Route exact path="/" component={PacificaCarousel} />
+              <Route path="/about" component={PacificaAbout} />
+              <Route path="/docs" component={PacificaDocs} />
+              <Route path="/save" component={AlbatrossSave} />
+            </div>
+          </Router>
+        </div>
       </div>
     );
   }
