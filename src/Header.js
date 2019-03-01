@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css';
 
 class PacificaHeader extends Component {
@@ -25,9 +26,9 @@ class PacificaHeader extends Component {
           <div className="dropdown">
             <button className="dropbtn">Get Pacifica!</button>
             <div className="dropdown-content">
-              <Link to='/docs#source'>Source Code</Link>
-              <Link to='/docs#container'>Container</Link>
-              <Link to='/docs#docs'>Documentation</Link>
+              <HashLink to='/docs#source'>Source Code</HashLink>
+              <HashLink to='/docs#container'>Container</HashLink>
+              <HashLink to='/docs#docs'>Documentation</HashLink>
             </div>
           </div>
           <div className="dropdown">
