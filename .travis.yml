@@ -1,0 +1,26 @@
+language: node_js
+dist: xenial
+node_js:
+- '10'
+cache: npm
+stages:
+- test
+- deploy
+jobs:
+  include:
+  - stage: test
+    script: npm run test
+  - stage: deploy
+    script: npm run build
+    deploy:
+      local_dir: build
+      provider: pages
+      skip_cleanup: true
+      github_token: "$GITHUB_TOKEN"
+      keep_history: true
+      repo: pacifica/pacifica-main-site
+      target_branch: master
+      on:
+        branch: master
+env:
+  secure: dC5WbhOsyAhMXrI6GAX4kaAGfVvWcBH8kxDqcUKVN3RvdBNy0ATj1BeaEACeA12LCXe33n9ILuCSnj883S4NPwxhNinVU+KoTFxQXOWZeeDkh1JcW9EhaSMQnhiAtyHom4wEqCNyLnIeIFEcP08W+77/UfSIpKVxLymcK01nH7MfYBn5zLSu8KSYzW3UJvqh06pEaqx+rf5ridZ4u/KaSDI+pOGfJ+Pytf2D3D92bZFcn9KjVVFmKtAypG5jsGAjQ2g8rCi6Y3RaOaGKUy5iOgMJuE/w/pPQzt9qzu0/zj7x9lUScbda6wSTBZRf5uJefmfAYMbGKJmw5IdOTUlDE3MyruRat/eUnYCDTwGAsC8At1TjaepefVpAFiahLdoarhD6Ak6nKfSOeaca+cNVVVJyVLfTGS/TRrJtmN3PSB/WKPYkQj8h9VTQg5K0JtCcP5idUK82OmqInEX4HfB6sNysNHyAFkL2xKzXz4esEcuTD0Fu/3+z5b+jtfAF4qul96MfyDkadstNrRtZKpB4JW4enORFPRXgaQjWAUCQxKJytFtfyZGK8KEkqDc/iTBn0kY0x9g8K3iWsvIgXMg7OSew9n1DIakCVrz7PD9Yk1LnBVqgwF1bxH8hYJY3C83ssc/LSWNkO9cxUX0mrNc/gQ+WGMKa1DzUOFJMA2fBI5M=
