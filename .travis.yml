@@ -18,7 +18,7 @@ jobs:
       skip_cleanup: true
       github_token: "$GITHUB_TOKEN"
       keep_history: true
-      repo: pacifica/pacifica-main-site
+      repo: pacifica/pacifica.github.io
       target_branch: master
       on:
         branch: master
