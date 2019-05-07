@@ -1,6 +1,7 @@
 import React from "react";
 import UnderConstruction from "react-under-construction";
 import "react-under-construction/build/css/index.css";
+import logo from './logo.png';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         }
       }}
       logo={{
-        src: "https://image.ibb.co/b7guP5/Rubbby_without_text.png",
+        src: logo,
         alt: "alt text"
       }}
       title={{
