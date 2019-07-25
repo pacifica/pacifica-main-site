@@ -1,0 +1,47 @@
+---
+title_loren_ipsum: &template_title_text |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+  consectetur.
+short_loren_ipsum: &template_short_20_text |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut
+  orci sit amet purus gravida euismod. Proin tempor, nibh at.
+loren_ipsum: &template_full_text |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+  aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+  culpa qui officia deserunt mollit anim id est laborum.
+homepage:
+  titleblock: *template_title_text
+  datablock: *template_full_text
+  solveblock: *template_full_text
+  impactblock: *template_full_text
+aboutpage:
+  title: About
+  content:
+    - *template_full_text
+    - *template_full_text
+    - *template_full_text
+    - title: Section Title
+      content:
+        - *template_full_text
+        - *template_full_text
+        - title: Subsection Title
+          content:
+            - *template_full_text
+docspage:
+  title: API Docs
+  content:
+    - *template_full_text
+    - title: Software Thing 1
+      content:
+        - *template_full_text
+    - title: Software Thing 2
+      content:
+        - *template_full_text
+    - title: Software Thing 3
+      content:
+        - *template_full_text
+footer: *template_short_20_text
