@@ -20,8 +20,10 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "plugins": [
         "react",
+        "babel",
         "jest"
     ],
     "rules": {
@@ -29,5 +31,10 @@
         "react/jsx-indent-props": "off",
         "react/jsx-max-depth": "off",
         "max-len": ["error", { "code": 120 }]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
