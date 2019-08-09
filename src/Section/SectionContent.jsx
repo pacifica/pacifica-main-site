@@ -5,9 +5,17 @@ const SectionContent = function SectionContent (content, level) {
   const items = content.map((value, index) => {
     if (typeof value === 'string') {
       return (
-        <p key={`paragraph-${level}-${index.toString()}`}>
-          {value}
-        </p>
+        <div
+          className="home-text-block"
+          key={`div-block-${level}-${index.toString()}`}
+        >
+          <p
+            className="home-text"
+            key={`paragraph-${level}-${index.toString()}`}
+          >
+            {value}
+          </p>
+        </div>
       )
     }
     // eslint-disable-next-line no-magic-numbers
