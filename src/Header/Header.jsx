@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet'
 import React from 'react'
 import getText from '../Utils'
 import logo from '../assets/Pacifica-64x64-black.png'
@@ -10,14 +9,6 @@ const Header = function Header () {
   const { title } = getText().header
   return (
     <div className="header">
-      <Helmet>
-        <link
-          crossOrigin="anonymous"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          rel="stylesheet"
-        />
-      </Helmet>
       <div className="logo-block">
         <div className="logo-img-block">
           <img
