@@ -1,15 +1,16 @@
+@import 'variables';
+
 @font-face {
     font-family: 'Conthrax';
     src: url("assets/conthrax-sb.ttf");
 }
-$titlecolor: #3f3f3f;
-$textcolor: #7f7f7f;
+
 div.root-float {
     max-width: 1024px;
     margin: 0 auto;
 }
 div.home-root {
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 h1 {
@@ -36,24 +37,16 @@ div.logo-block {
     max-width: 580px;
     text-align: center;
 }
-div.nav-bar {
-    height: 56px;
-    width: 300px;
-    float: right;
-}
 div.break-bar {
     height: 56px;
     width: 100%;
     background-color: $titlecolor;
 }
-nav.nav-bar {
-    float: right;
-}
 .dropdown-toggle, .dropdown-item {
     font-family: Arial;
 }
 .dropdown-toggle {
-    color: #ffffff;
+    color: $inversetextcolor;
     font-weight: bold;
 }
 div.carousel-caption {
@@ -89,15 +82,18 @@ h3.home-image-caption {
 div.datamgmt-image-block {
     width: 152px;
     margin: 0 auto;
+    text-align: center;
 }
 div.impact-image-block {
     width: 139px;
     margin: 0 auto;
+    text-align: center;
 }
 div.solve-image {
     max-width: 576px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 div.home-text-block, hr.home-divider {
     max-width: 80%;
@@ -112,7 +108,7 @@ div.root-footer {
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background: #3f3f3f;
+    background: $titlecolor;
 }
 div.footer-root {
     max-width: 70%;
@@ -121,6 +117,6 @@ div.footer-root {
 p.footer-text {
     font-family: Arial;
     text-align: center;
-    color: #ffffff;
+    color: $inversetextcolor;
     margin-bottom: 0px;
 }
