@@ -1,4 +1,3 @@
----
 title_loren_ipsum: &template_title_text |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
   consectetur.
@@ -14,10 +13,14 @@ loren_ipsum: &template_full_text |
   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.
 homepage:
-  titleblock: *template_title_text
-  datablock: *template_full_text
+  carousel:
+    - *template_title_text
+    - *template_title_text
+  datamgmtblock: *template_full_text
   solveblock: *template_full_text
   impactblock: *template_full_text
+header:
+  title: Pacifica Software
 aboutpage:
   title: About
   content:

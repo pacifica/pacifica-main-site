@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard",
+        "eslint:all",
+        "plugin:react/all",
+        "plugin:jest/all"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "babel",
+        "jest"
+    ],
+    "rules": {
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/jsx-max-depth": "off",
+        "max-len": ["error", { "code": 120 }]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
