@@ -8,24 +8,46 @@
     "querystringify": ">=2.0.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-router": "^5.0.1",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
     "react-twitter-widgets": "^1.7.1"
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "eslint": "eslint --ext .jsx --ext .js src/",
-    "eslint-fix": "eslint --fix --ext .jsx --ext .js src/"
+    "test": "jest",
+    "eslint": "eslint --ext .jsx --ext .js src/ __mocks__/",
+    "eslint-fix": "eslint --fix --ext .jsx --ext .js src/ __mocks__/"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "Utils$": "<rootDir>/__mocks__/MockUtils.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest",
+      "^.+\\.(css|scss|less)$": "jest-css-modules"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "__mocks__",
+      "src"
+    ]
   },
   "browserslist": {
     "production": [
@@ -40,12 +62,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "css-loader": "^3.2.0",
+    "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
@@ -58,13 +85,17 @@
     "file-loader": "^4.1.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-css-modules": "^2.1.0",
+    "jest-transform-stub": "^2.0.0",
     "js-yaml-loader": "^1.2.2",
     "node-sass": "^4.12.0",
     "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^1.0.0",
-    "webpack": "4.29.6",
-    "webpack-dev-server": "3.2.1",
-    "webpack-cli": "<3.2"
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }

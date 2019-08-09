@@ -13,6 +13,7 @@ const App = function App () {
         <Header />
         <Route
           component={Home}
+          exact
           path="/"
         />
         <Route
