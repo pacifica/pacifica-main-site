@@ -1,0 +1,100 @@
+@import '../variables';
+
+.pacifica-navbar {
+  height: 100%;
+  float: right;
+  .navbar {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    .pacifica-navbarBrand {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0 50px 0;
+      width: 100px;
+      margin: 0;
+      &:last-of-type {
+        margin-right: 34px;
+      }
+      &:hover {
+        .pacifica-dropdownMenu, .pacifica-dropdownArrow, .pacifica-dropdownOverline {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.pacifica-dropdownDivider.navbar-brand {
+  border-left: solid 1px $inversetextcolor;
+  margin: 0;
+}
+
+.pacifica-dropdown {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pacifica-dropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    background: $inversetextcolor;
+    width: 200px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid $inversetextcolor;
+      bottom: 100%;
+      left: 95px;
+    }
+    .pacifica-dropdownItem {
+      text-align: center;
+      padding: 0.25em 1em;
+      position: relative;
+      &:not(:last-of-type) {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 150px;
+          bottom: -1px;
+          left: 25px;
+          border-bottom: 1px solid $textcolor;
+        }
+      }
+      &:hover {
+        background: $brandcolorlight;
+      }
+    }
+  }
+
+  & > :not(.pacifica-dropdownMenu).pacifica-dropdownItem {
+    color: $inversetextcolor;
+    text-transform: uppercase;
+  }
+
+  .pacifica-dropdownArrow {
+    display: none;
+    position: absolute;
+  }
+
+  .pacifica-dropdownOverline {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: $brandcolor;
+    bottom: 100%;
+    
+  }
+
+}
