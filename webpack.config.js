@@ -4,6 +4,7 @@ module.exports = {
   devServer: {
     compress: true,
     contentBase: path.join(__dirname, 'dist'),
+    historyApiFallback: true,
     port: 9000
   },
   entry: './src/index.jsx',
