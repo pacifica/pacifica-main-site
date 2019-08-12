@@ -83,14 +83,14 @@ const NavDropdown = function NavDropdown () {
               to="/docker"
             />,
             <DropdownItem
-              key="PyPy"
-              name="PyPy"
-              to="/users"
+              key="Python"
+              name="Python"
+              to="/python"
             />,
             <DropdownItem
-              key="Github"
-              name="Github"
-              to="/ops"
+              key="Source"
+              name="Source"
+              to="https://github.com/pacifica/pacifica"
             />
           ]}
         />
