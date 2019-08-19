@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 import Section from './Section.jsx'
 
 const SectionContent = function SectionContent (content, level, prefix = 'home') {
@@ -13,7 +14,7 @@ const SectionContent = function SectionContent (content, level, prefix = 'home')
             className={`${prefix}-text`}
             key={`paragraph-${level}-${index.toString()}`}
           >
-            {value}
+            <ReactMarkdown source={value} />
           </p>
         </div>
       )
