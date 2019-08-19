@@ -14,39 +14,142 @@ loren_ipsum: &template_full_text |
   culpa qui officia deserunt mollit anim id est laborum.
 homepage:
   carousel:
+    - |
+      Collaborate. Share. Integrate. Build. Pacifica supports the
+      scientific data lifecycle.
     - *template_title_text
-    - *template_title_text
-  datamgmtblock: *template_full_text
-  solveblock: *template_full_text
-  impactblock: *template_full_text
+  datamgmtblock: |
+    Scientific Data Management systems for research and development
+    institutions need to provide uncomplicated solutions to meet
+    often complicated problems. Pacifica offers institutions a
+    platform to collaboratively manage data between projects.
+    Pacifica can accelerate the scientific process by making search
+    and discovery tractable solutions.
+  solveblock: |
+    Open source does not end with the release of the source code.
+    Complex problems require the community to share ideas, processes,
+    and support features to solve the requirements -- the evolution
+    from open source, to open everything. Pacifica is governed by an
+    open everything community.
+  impactblock: |
+    Pacifica seeks to enable institutions to reduce risk while
+    accelerating scientific impact for all its users. Pacifica has
+    interfaces to allow scientists to automate workflow, improving
+    quality and reuse of their research. Pacifica is open source and
+    allows contributions from development and operator teams.
 header:
   title: Pacifica Software
 aboutpage:
   title: About
   content:
-    - *template_full_text
-    - *template_full_text
-    - *template_full_text
-    - title: Section Title
+    - |
+      Pacifica is an institutional data management system that stores
+      both scientific data content as files and information about
+      those files.
+      The files are stored in a hierarchical storage management (HSM)
+      system for affective long term storage. Additional services are
+      provided to stage data in and out of the HSM for facilitating
+      workflows.
+      Information about the state of data can be captured separately
+      from manipulating files. This provides complete provenance
+      capture through generic interfaces for custom workflows.
+    - title: The Data Management Challenge
       content:
-        - *template_full_text
-        - *template_full_text
-        - title: Subsection Title
+        - |
+          The challenge is defined within the nexus of a large institution's
+          operating model, and the data policies the institution is required
+          to follow.
+        - title: DOE Data Management Policy
           content:
-            - *template_full_text
-docspage:
-  title: API Docs
+            - |
+              The DOE Data Management policy covers a lot, but we will only highlight
+              the guiding principles here.
+            - title: Effective Data Management
+              content:
+                - |
+                  ```
+                   1. Effective data management has the potential to increase the pace of
+                      scientific discovery and promote more efficient and effective use of
+                      government funding and resources. Data management planning should be
+                      an integral part of research planning.
+                  ```
+                  Pacifica addresses these challenges by offering an effective mechanism
+                  for data sharing, thus maximizing the impact of research across all
+                  participating organizations.
+            - title: Sharing Proves Integrity
+              content:
+                - |
+                  ```
+                  2. Sharing and preserving data are central to protecting the integrity of
+                      science by facilitating validation of results and to advancing science
+                      by broadening the value of research data to disciplines other than the
+                      originating one and to society at large. To the greatest extent, with
+                      the fewest constraints possible, and consistent with the requirements
+                      and other principles stated in this document, data sharing should make
+                      digital research data available to and useful for the scientific
+                      community, industry, and the public.
+                  ```
+                  Sharing scientific data with the public proves the scientific work being done
+                  is of the highest integrity. A dependency of this is to share the software
+                  system managing the data in an open source model. Without an open source 
+                  software model the integrity of the data and the science could be suspect.
+                  This is why Pacifica is an open source software project.
+            - title: Preserve What You Can
+              content:
+                - |
+                  ```
+                  3. Not all data need to be shared or preserved. The costs and benefits of
+                      doing so should be considered in data management planning.
+                  ```
+
+                  The task of sharing and preserving all data generated by open science is
+                  costly, especially for small projects. The overhead required to adhere to
+                  meeting the policy must be addressed by the supporting institution.
+historypage:
+  title: History
   content:
-    - *template_full_text
-    - title: Software Thing 1
+    - |
+      Pacifica was created from a collaboration in the
+      [United States National Laboratory](https://en.wikipedia.org/wiki/United_States_Department_of_Energy_national_laboratories)
+      system. The Environmental Molecular Sciences Laboratory ([EMSL](https://www.emsl.pnnl.gov))
+      collaborated with its host institution Pacific Northwest National Laboratory
+      ([PNNL](https://www.pnnl.gov)) to help manage the scientific data generated
+      by researchers.
+    - |
+      EMSL is a 
+      [user facility](https://www.energy.gov/science/science-innovation/office-science-user-facilities)
+      sponsored by the Department of Energy ([DOE](https://www.energy.gov))
+      [Office of Science](https://www.energy.gov/science)) Biological and
+      Environmental Research ([BER](https://www.energy.gov/science/ber/biological-and-environmental-research)).
+    - |
+      Pacifica was created by EMSL and PNNL in response to 
+      [DOE Data Management Policy](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+      to manage open research data to make it more transparent. EMSL and
+      PNNL both have similar administrative challenges in that a single
+      project can not shoulder the burden of meeting the policy on its
+      own. This brought both EMSL and PNNL to the table to collaborate on
+      developing an institutional data management system for open research
+      science.
+docspage:
+  title: Documentation
+  content:
+    - |
+      We should document things and here are some references to where
+      we have done some of that.
+    - title: Developer and User Documentation
       content:
-        - *template_full_text
-    - title: Software Thing 2
+        - |
+          Developer and user documentation are managed in the Github
+          Wiki of the primary
+          [Pacifica](https://github.com/pacifica/pacifica/wiki)
+          repository.
+    - title: Code and API Documentation
       content:
-        - *template_full_text
-    - title: Software Thing 3
-      content:
-        - *template_full_text
+        - |
+          Software API documentation is developed in Sphinx and are
+          supported by [ReadTheDocs](https://readthedocs.org). A full
+          listing of the documentation sites are listed
+          [here](https://github.com/pacifica/pacifica/wiki/Pacifica-Software-API-Documentation).
 mission: |
   To provide institutions a foundation to support the scientific data
   life cycle.
