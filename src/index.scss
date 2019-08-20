@@ -7,6 +7,9 @@ div[class$="-text-block"], hr[class$="-divider"] {
 p[class$="-text"] {
     font-family: Arial;
 }
+img[class$="-image"]:not(.home-image) {
+    box-shadow: 1px 1px 3px -1px $shadowcolor;
+}
 [class$="-title"] {
     font-family: Arial;
     font-stretch: condensed;
