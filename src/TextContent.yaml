@@ -150,14 +150,19 @@ docspage:
           supported by [ReadTheDocs](https://readthedocs.org). A full
           listing of the documentation sites are listed
           [here](https://github.com/pacifica/pacifica/wiki/Pacifica-Software-API-Documentation).
-mission: |
-  To provide institutions a foundation to support the scientific data
-  life cycle.
-vision: |
-  We will become a focal point for institutions to collaborate, share
-  scientific data, integrate new technologies, and develop their
-  research portfolio. We will enable institutions to meet and exceed
-  emerging sponsor data challenges, while maintaining promises kept
-  in the past. We will provide the platform to accelerate scientific
-  research in directions never thought possible.
+missionpage:
+  title: Mission
+  content:
+    - |
+      To provide institutions a foundation to support the scientific data
+      life cycle.
+    - title: Vision
+      content:
+        - |
+          We will become a focal point for institutions to collaborate, share
+          scientific data, integrate new technologies, and develop their
+          research portfolio. We will enable institutions to meet and exceed
+          emerging sponsor data challenges, while maintaining promises kept
+          in the past. We will provide the platform to accelerate scientific
+          research in directions never thought possible.
 footer: *template_short_20_text
