@@ -1,5 +1,52 @@
 @import '../variables';
 
+@font-face {
+  font-family: 'Conthrax';
+  src: url("../assets/conthrax-sb.ttf");
+}
+
+div.root-float {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Conthrax';
+  color: $titlecolor;
+  position: relative;
+  top: 24px;
+}
+img.logo {
+  padding-left: 48px;
+  padding-top: 16px;
+}
+div.logo-title-block {
+  float: right;
+  height: 100%;
+}
+div.logo-img-block {
+  float: left;
+  min-height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+div.logo-block {
+  height: 96px;
+  max-width: 580px;
+  text-align: center;
+}
+div.break-bar {
+  height: 56px;
+  width: 100%;
+  background-color: $titlecolor;
+}
+.dropdown-toggle, .dropdown-item {
+  font-family: Arial;
+}
+.dropdown-toggle {
+  color: $inversetextcolor;
+  font-weight: bold;
+}
+
 .pacifica-navbar {
   height: 100%;
   float: right;

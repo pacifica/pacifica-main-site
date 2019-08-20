@@ -1,0 +1,64 @@
+@import '../variables';
+
+div.home-root {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+div.carousel-caption {
+    font-family: Arial;
+    font-weight: bold;
+    bottom: 20%;
+    top: 20%;
+    font-size: 2rem;
+}
+[class$="-title"] {
+    font-family: Arial;
+    font-stretch: condensed;
+    margin-bottom: 0px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: $brandcolor;
+}
+.home-title {
+  color: $textcolor;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: normal;
+}
+div.home-image-blocks {
+    padding: 16px;
+}
+div.home-title-block {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3.home-image-caption {
+    font-family: Arial;
+    font-size: 2rem;
+    color: $textcolor;
+    text-align: center;
+    padding-top: 20px;
+}
+div.datamgmt-image-block {
+    width: 152px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.impact-image-block {
+    width: 139px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.solve-image {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+p.home-text {
+    text-align: center;
+}

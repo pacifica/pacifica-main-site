@@ -20,7 +20,7 @@ const SectionContent = function SectionContent (content, level, prefix = 'home')
       )
     }
     // eslint-disable-next-line no-magic-numbers
-    return (Section(value, level + 1, prefix))
+    return (Section(value, level + 1, prefix, null))
   })
   return items
 }

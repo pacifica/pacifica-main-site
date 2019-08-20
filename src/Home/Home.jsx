@@ -1,3 +1,4 @@
+import './index.scss'
 import Contribute from './Contribute.jsx'
 import DataMgmt from './DataMgmt.jsx'
 import HomeCarousel from './Carousel.jsx'
