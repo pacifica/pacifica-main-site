@@ -2,10 +2,28 @@
 
 
 div[class$="-text-block"], hr[class$="-divider"] {
-    max-width: 80%;
-    margin: 0 auto;
     padding: 20px;
 }
 p[class$="-text"] {
     font-family: Arial;
+}
+[class$="-title"] {
+    font-family: Arial;
+    font-stretch: condensed;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-weight: bold;
+    color: $brandcolor;
+}
+h2[class$="-title"] {
+    font-size: 5rem;
+}
+h3[class$="-title"] {
+    font-size: 4rem;
+}
+h4[class$="-title"] {
+    font-size: 3rem;
+}
+h5[class$="-title"] {
+    font-size: 2rem;
 }
