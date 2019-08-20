@@ -5,8 +5,15 @@ a {
     text-decoration: none;
   }
 }
+div[class^="block-"] {
+  &:first-of-type > hr[class$="-divider"] {
+    border-top: none;
+    padding: 5px;
+  }
+}
 div[class$="-text-block"], hr[class$="-divider"] {
     padding: 20px;
+    font-size: 1.25em;
 }
 p[class$="-text"] {
     font-family: Arial;
@@ -33,4 +40,13 @@ h4[class$="-title"] {
 }
 h5[class$="-title"] {
     font-size: 2rem;
+}
+blockquote {
+    background-color: $quotecolor;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    ol {
+      margin: 0;
+    }
 }
