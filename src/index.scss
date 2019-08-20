@@ -1,6 +1,10 @@
 @import 'variables';
 
-
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
 div[class$="-text-block"], hr[class$="-divider"] {
     padding: 20px;
 }

@@ -1,5 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap'
+<<<<<<< HEAD
 import { LinkContainer } from 'react-router-bootstrap'
+=======
+import Link from '../Link.jsx'
+>>>>>>> add links to home page images; modularize internal/external link; closes #43
 import React from 'react'
 import decision from '../assets/decision_icon.png'
 import develop from '../assets/developers_icon.png'
@@ -21,78 +25,74 @@ const Impact = function Impact () {
         <Container>
           <Row>
             <Col>
-              <LinkContainer to="/leaders">
-                <div className="impact-image-block">
+              <div className="impact-image-block">
+                <Link to="/leaders">
                   <img
                     className="home-image"
                     src={decision}
                   />
-                </div>
-              </LinkContainer>
+                </Link>
+              </div>
             </Col>
             <Col>
-              <a
-                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <div className="impact-image-block">
+              <div className="impact-image-block">
+                <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                   <img
                     className="home-image"
                     src={develop}
                   />
-                </div>
-              </a>
+                </Link>
+              </div>
             </Col>
             <Col>
-              <a
-                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Users"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <div className="impact-image-block">
+              <div className="impact-image-block">
+                <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Users">
                   <img
                     className="home-image"
                     src={scientists}
                   />
-                </div>
-              </a>
+                </Link>
+              </div>
             </Col>
             <Col>
-              <a
-                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Operators"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <div className="impact-image-block">
+              <div className="impact-image-block">
+                <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Operators">
                   <img
                     className="home-image"
                     src={operator}
                   />
-                </div>
-              </a>
+                </Link>
+              </div>
             </Col>
           </Row>
           <Row float="center">
             <Col>
-              <h3 className="home-image-caption">
-                {'Decision Makers'}
-              </h3>
+              <Link to="/leaders">
+                <h3 className="home-image-caption">
+                  {'Decision Makers'}
+                </h3>
+              </Link>
             </Col>
             <Col>
-              <h3 className="home-image-caption">
-                {'Developers'}
-              </h3>
+              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
+                <h3 className="home-image-caption">
+                  {'Developers'}
+                </h3>
+              </Link>
             </Col>
             <Col>
-              <h3 className="home-image-caption">
-                {'Scientists'}
-              </h3>
+              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
+                <h3 className="home-image-caption">
+                  {'Scientists'}
+                </h3>
+              </Link>
             </Col>
             <Col>
-              <h3 className="home-image-caption">
-                {'Operators'}
-              </h3>
+              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
+                <h3 className="home-image-caption">
+                  {'Operators'}
+                </h3>
+              </Link>
             </Col>
           </Row>
         </Container>
