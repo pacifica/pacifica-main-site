@@ -1,3 +1,4 @@
+import './index.scss'
 import React from 'react'
 import getText from '../Utils'
 

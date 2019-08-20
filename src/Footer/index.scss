@@ -1,0 +1,18 @@
+@import '../variables';
+
+div.root-footer {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: $titlecolor;
+}
+div.footer-root {
+    max-width: 70%;
+    margin: 0 auto;
+}
+p.footer-text {
+    font-family: Arial;
+    text-align: center;
+    color: $inversetextcolor;
+    margin-bottom: 0px;
+}

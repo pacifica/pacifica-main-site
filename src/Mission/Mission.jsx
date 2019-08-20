@@ -1,31 +1,18 @@
+import './index.scss'
 import React from 'react'
+import Section from '../Section'
 import getText from '../Utils'
 
+const imageSrc = require('../assets/mission-image-400x200.png')
+
 const Mission = function Mission () {
-  const { mission, vision } = getText()
   return (
-    <div>
-      <div className="home-text-block">
-        <h2>
-          {`Mission`}
-        </h2>
-      </div>
-      <div className="home-text-block">
-        <p className="home-text">
-          {mission}
-        </p>
-      </div>
-      <hr className="home-divider" />
-      <div className="home-text-block">
-        <h3>
-          {`Vision`}
-        </h3>
-      </div>
-      <div className="home-text-block">
-        <p className="home-text">
-          {vision}
-        </p>
-      </div>
+    <div className="Mission">
+      {
+        // We are starting with h2 that's why 2
+        // eslint-disable-next-line no-magic-numbers
+        Section(getText().missionpage, 2, 'Mission', imageSrc)
+      }
     </div>
   )
 }

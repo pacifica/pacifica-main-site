@@ -2,16 +2,16 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Section from './Section.jsx'
 
-const SectionContent = function SectionContent (content, level) {
+const SectionContent = function SectionContent (content, level, prefix = 'home') {
   const items = content.map((value, index) => {
     if (typeof value === 'string') {
       return (
         <div
-          className="home-text-block"
+          className={`${prefix}-text-block`}
           key={`div-block-${level}-${index.toString()}`}
         >
           <p
-            className="home-text"
+            className={`${prefix}-text`}
             key={`paragraph-${level}-${index.toString()}`}
           >
             <ReactMarkdown source={value} />
@@ -20,7 +20,7 @@ const SectionContent = function SectionContent (content, level) {
       )
     }
     // eslint-disable-next-line no-magic-numbers
-    return (Section(value, level + 1))
+    return (Section(value, level + 1, prefix, null))
   })
   return items
 }

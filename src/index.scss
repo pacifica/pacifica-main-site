@@ -1,123 +1,29 @@
 @import 'variables';
 
-@font-face {
-    font-family: 'Conthrax';
-    src: url("assets/conthrax-sb.ttf");
-}
 
-div.root-float {
-    max-width: 1024px;
-    margin: 0 auto;
+div[class$="-text-block"], hr[class$="-divider"] {
+    padding: 20px;
 }
-div.home-root {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-h1 {
-    font-family: 'Conthrax';
-    color: $titlecolor;
-    position: relative;
-    top: 24px;
-}
-img.logo {
-    padding-left: 48px;
-    padding-top: 16px;
-}
-div.logo-title-block {
-    float: right;
-    height: 100%;
-}
-div.logo-img-block {
-    float: left;
-    min-height: 100%;
-    width: auto;
-    cursor: pointer;
-}
-div.logo-block {
-    height: 96px;
-    max-width: 580px;
-    text-align: center;
-}
-div.break-bar {
-    height: 56px;
-    width: 100%;
-    background-color: $titlecolor;
-}
-.dropdown-toggle, .dropdown-item {
+p[class$="-text"] {
     font-family: Arial;
 }
-.dropdown-toggle {
-    color: $inversetextcolor;
-    font-weight: bold;
-}
-div.carousel-caption {
-    font-family: Arial;
-    font-weight: bold;
-    bottom: 20%;
-    top: 20%;
-    font-size: 2rem;
-}
-.home-title {
+[class$="-title"] {
     font-family: Arial;
     font-stretch: condensed;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-weight: bold;
+    color: $brandcolor;
+}
+h2[class$="-title"] {
+    font-size: 5rem;
+}
+h3[class$="-title"] {
     font-size: 4rem;
-    color: $textcolor;
-    text-align: center;
-    margin-bottom: 0px;
 }
-div.home-image-blocks {
-    padding: 16px;
+h4[class$="-title"] {
+    font-size: 3rem;
 }
-div.home-title-block {
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-h3.home-image-caption {
-    font-family: Arial;
+h5[class$="-title"] {
     font-size: 2rem;
-    color: $textcolor;
-    text-align: center;
-    padding-top: 20px;
-}
-div.datamgmt-image-block {
-    width: 152px;
-    margin: 0 auto;
-    text-align: center;
-}
-div.impact-image-block {
-    width: 139px;
-    margin: 0 auto;
-    text-align: center;
-}
-div.solve-image {
-    max-width: 576px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-div.home-text-block, hr.home-divider {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-p.home-text {
-    font-family: Arial;
-    text-align: center;
-}
-div.root-footer {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    background: $titlecolor;
-}
-div.footer-root {
-    max-width: 70%;
-    margin: 0 auto;
-}
-p.footer-text {
-    font-family: Arial;
-    text-align: center;
-    color: $inversetextcolor;
-    margin-bottom: 0px;
 }
