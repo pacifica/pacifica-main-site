@@ -14,7 +14,10 @@ const Section = function Section (data, level, prefix = 'home', imageSrc = null)
     )
   }
   return (
-    <div key={`block-${level}`} className={`block-${level}`}>
+    <div
+      className={`block-${level}`}
+      key={`block-${level}`}
+    >
       <hr className={`${prefix}-divider`} />
       {imageComponent}
       {React.createElement(`h${level}`, {

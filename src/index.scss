@@ -5,6 +5,9 @@ a {
     text-decoration: none;
   }
 }
+.link {
+  cursor: pointer;
+}
 div[class^="block-"] {
   &:first-of-type > hr[class$="-divider"] {
     border-top: none;
