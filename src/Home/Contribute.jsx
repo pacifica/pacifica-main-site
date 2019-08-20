@@ -25,7 +25,7 @@ const Contribute = function Contribute () {
             </Col>
             <Col>
               <div className="solve-image">
-                <Link to="https://www.energy.gov">
+                <Link to="https://www.energy.gov/science">
                   <img src={doe} />
                 </Link>
               </div>
