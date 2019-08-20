@@ -10,22 +10,22 @@ const Header = function Header () {
   const { title } = getText().header
   return (
     <div className="header">
-      <div className="logo-block">
-        <div className="logo-img-block">
-          <LinkContainer to="/">
+      <LinkContainer to="/">
+        <div className="logo-block">
+          <div className="logo-img-block">
             <img
               alt={title}
               className="logo"
               src={logo}
             />
-          </LinkContainer>
+          </div>
+          <div className="logo-title-block">
+            <h1>
+              {title}
+            </h1>
+          </div>
         </div>
-        <div className="logo-title-block">
-          <h1>
-            {title}
-          </h1>
-        </div>
-      </div>
+      </LinkContainer>
       <div className="break-bar">
         <NavDropdown />
       </div>

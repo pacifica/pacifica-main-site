@@ -1,4 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import React from 'react'
 import decision from '../assets/decision_icon.png'
 import develop from '../assets/developers_icon.png'
@@ -20,36 +21,56 @@ const Impact = function Impact () {
         <Container>
           <Row>
             <Col>
-              <div className="impact-image-block">
-                <img
-                  className="home-image"
-                  src={decision}
-                />
-              </div>
+              <LinkContainer to="/leaders">
+                <div className="impact-image-block">
+                  <img
+                    className="home-image"
+                    src={decision}
+                  />
+                </div>
+              </LinkContainer>
             </Col>
             <Col>
-              <div className="impact-image-block">
-                <img
-                  className="home-image"
-                  src={develop}
-                />
-              </div>
+              <a
+                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className="impact-image-block">
+                  <img
+                    className="home-image"
+                    src={develop}
+                  />
+                </div>
+              </a>
             </Col>
             <Col>
-              <div className="impact-image-block">
-                <img
-                  className="home-image"
-                  src={scientists}
-                />
-              </div>
+              <a
+                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Users"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className="impact-image-block">
+                  <img
+                    className="home-image"
+                    src={scientists}
+                  />
+                </div>
+              </a>
             </Col>
             <Col>
-              <div className="impact-image-block">
-                <img
-                  className="home-image"
-                  src={operator}
-                />
-              </div>
+              <a
+                href="https://github.com/pacifica/pacifica/wiki/Pacifica-Operators"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div className="impact-image-block">
+                  <img
+                    className="home-image"
+                    src={operator}
+                  />
+                </div>
+              </a>
             </Col>
           </Row>
           <Row float="center">
