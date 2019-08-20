@@ -165,4 +165,9 @@ missionpage:
           emerging sponsor data challenges, while maintaining promises kept
           in the past. We will provide the platform to accelerate scientific
           research in directions never thought possible.
-footer: *template_short_20_text
+footer: |
+  [Pacifica](https://pacifica.github.io/about) is a project created and
+  maintained by [David Brown](https://github.com/dmlb2000). The Pacifica
+  website is licensed
+  [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and is
+  built using [React Bootstrap](https://react-bootstrap.github.io/).
