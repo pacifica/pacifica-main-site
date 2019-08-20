@@ -17,17 +17,35 @@ const Contribute = function Contribute () {
           <Row>
             <Col>
               <div className="solve-image">
-                <img src={pnnl} />
+                <a
+                  href="https://www.pnnl.gov"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={pnnl} />
+                </a>
               </div>
             </Col>
             <Col>
               <div className="solve-image">
-                <img src={doe} />
+                <a
+                  href="https://www.energy.gov"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={doe} />
+                </a>
               </div>
             </Col>
             <Col>
               <div className="solve-image">
-                <img src={emsl} />
+                <a
+                  href="https://www.emsl.pnnl.gov"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={emsl} />
+                </a>
               </div>
             </Col>
           </Row>

@@ -45,6 +45,11 @@ const NavDropdown = function NavDropdown () {
               to="/docs"
             />,
             <DropdownItem
+              key="Decision Makers"
+              name="Decision Makers"
+              to="/leaders"
+            />,
+            <DropdownItem
               key="Developers"
               name="Developers"
               to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers"
@@ -58,11 +63,6 @@ const NavDropdown = function NavDropdown () {
               key="Operators"
               name="Operators"
               to="https://github.com/pacifica/pacifica/wiki/Pacifica-Operators"
-            />,
-            <DropdownItem
-              key="Decision Makers"
-              name="Decision Makers"
-              to="/leaders"
             />
           ]}
         />
