@@ -1,9 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
-<<<<<<< HEAD
-import { LinkContainer } from 'react-router-bootstrap'
-=======
 import Link from '../Link.jsx'
->>>>>>> add links to home page images; modularize internal/external link; closes #43
 import React from 'react'
 import decision from '../assets/decision_icon.png'
 import develop from '../assets/developers_icon.png'
