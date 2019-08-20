@@ -2,8 +2,8 @@ import React from 'react'
 import SectionContent from './SectionContent.jsx'
 
 // eslint-disable-next-line max-params
-const Section = function Section (data, level, prefix = 'home', imageSrc) {
-  let imageComponent = ''
+const Section = function Section (data, level, prefix = 'home', imageSrc = null) {
+  let imageComponent = null
   if (imageSrc !== null) {
     imageComponent = (
       <img
@@ -16,11 +16,11 @@ const Section = function Section (data, level, prefix = 'home', imageSrc) {
   return (
     <div key={`block-${level}`}>
       <hr className={`${prefix}-divider`} />
+      {imageComponent}
       {React.createElement(`h${level}`, {
         className: `${prefix}-title`,
         key: `header-${level}`
       }, data.title)}
-      {imageComponent}
       {SectionContent(data.content, level, prefix)}
     </div>
   )
