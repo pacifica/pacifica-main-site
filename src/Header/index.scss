@@ -89,7 +89,8 @@ div.break-bar {
   .pacifica-dropdownMenu {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 999;
+    box-shadow: 1px 1px 3px -1px $shadowcolor;
     top: 100%;
     background: $inversetextcolor;
     width: 200px;

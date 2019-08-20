@@ -10,17 +10,17 @@ const SectionContent = function SectionContent (content, level, prefix = 'home')
           className={`${prefix}-text-block`}
           key={`div-block-${level}-${index.toString()}`}
         >
-          <p
+          <div
             className={`${prefix}-text`}
             key={`paragraph-${level}-${index.toString()}`}
           >
             <ReactMarkdown source={value} />
-          </p>
+          </div>
         </div>
       )
     }
     // eslint-disable-next-line no-magic-numbers
-    return (Section(value, level + 1, prefix, null))
+    return (Section(value, level + 1, prefix))
   })
   return items
 }

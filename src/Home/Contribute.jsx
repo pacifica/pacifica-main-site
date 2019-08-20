@@ -1,4 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import Link from '../Link.jsx'
 import React from 'react'
 import doe from '../assets/doe_logo.png'
 import emsl from '../assets/emsl_logo.png'
@@ -17,35 +18,23 @@ const Contribute = function Contribute () {
           <Row>
             <Col>
               <div className="solve-image">
-                <a
-                  href="https://www.pnnl.gov"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Link to="https://www.pnnl.gov">
                   <img src={pnnl} />
-                </a>
+                </Link>
               </div>
             </Col>
             <Col>
               <div className="solve-image">
-                <a
-                  href="https://www.energy.gov"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Link to="https://www.energy.gov">
                   <img src={doe} />
-                </a>
+                </Link>
               </div>
             </Col>
             <Col>
               <div className="solve-image">
-                <a
-                  href="https://www.emsl.pnnl.gov"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Link to="https://www.emsl.pnnl.gov">
                   <img src={emsl} />
-                </a>
+                </Link>
               </div>
             </Col>
           </Row>
