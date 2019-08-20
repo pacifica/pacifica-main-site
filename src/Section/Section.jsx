@@ -16,7 +16,7 @@ const Section = function Section (data, level, prefix = 'home', imageSrc = null)
   return (
     <div
       className={`block-${level}`}
-      key={`block-${level}`}
+      key={`block-${level}-${Math.random()}`}
     >
       <hr className={`${prefix}-divider`} />
       {imageComponent}

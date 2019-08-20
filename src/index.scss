@@ -48,8 +48,9 @@ blockquote {
     background-color: $quotecolor;
     border: 1px solid #ddd;
     border-radius: 3px;
-    padding: 5px;
-    ol {
+    padding: 10px;
+    font-size: 0.9em;
+    p {
       margin: 0;
     }
 }
