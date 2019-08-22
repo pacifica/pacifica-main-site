@@ -10,6 +10,13 @@ div.carousel-caption {
     bottom: 20%;
     top: 20%;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
 }
 .home-title {
   color: $textcolor;
