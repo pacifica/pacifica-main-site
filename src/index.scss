@@ -58,7 +58,13 @@ blockquote {
     margin: 0 auto;
     margin-bottom: 10px;
     font-size: 0.9em;
+    font-style: italic;
     p {
       margin: 0;
+      &:nth-of-type(2) {
+        text-align: right;
+        margin: 5px 10px;
+        font-style: normal;
+      }
     }
 }
