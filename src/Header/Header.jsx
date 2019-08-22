@@ -7,7 +7,7 @@ import logo from '../assets/Pacifica-64x64-darkgrey.png'
 import NavDropdown from './NavDropdown.jsx'
 
 const Header = function Header () {
-  const { title } = getText().header
+  const { title, subtitle } = getText().header
   return (
     <div className="header">
       <LinkContainer to="/">
@@ -23,6 +23,9 @@ const Header = function Header () {
             <h1>
               {title}
             </h1>
+            <h5>
+              {subtitle}
+            </h5>
           </div>
         </div>
       </LinkContainer>

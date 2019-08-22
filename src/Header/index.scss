@@ -9,30 +9,39 @@ div.root-float {
   max-width: 1024px;
   margin: 0 auto;
 }
-h1 {
-  font-family: 'Conthrax';
-  color: $titlecolor;
-  position: relative;
-  top: 24px;
-}
 img.logo {
-  padding-left: 48px;
-  padding-top: 16px;
+  margin-left: 48px;
+  margin-right: 16px;
 }
 div.logo-title-block {
-  float: right;
-  height: 100%;
+  font-family: 'Conthrax';
+  text-align: center;
+  cursor: pointer;
+  & > h1 {
+    color: $titlecolor;
+    margin: 0;
+    line-height: 1;
+  }
+  & > h5 {
+    color: $textcolor;
+    font-size: 0.75em;
+    letter-spacing: 1em;
+    margin: 0;
+    margin-left: 1em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
 }
 div.logo-img-block {
-  float: left;
-  min-height: 100%;
-  width: auto;
   cursor: pointer;
 }
 div.logo-block {
   height: 96px;
   max-width: 580px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 div.break-bar {
   height: 56px;
