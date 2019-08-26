@@ -10,6 +10,21 @@ div.carousel-caption {
     bottom: 20%;
     top: 20%;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 2px $inversetextcolor;
+    border-right: solid 2px $inversetextcolor;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:
+      linear-gradient(to right, $inversetextcolor 15%, transparent 15%, transparent 85%, $inversetextcolor 85%) 0 100% / 100% 2px no-repeat,
+      linear-gradient(to right, $inversetextcolor 15%, transparent 15%, transparent 85%, $inversetextcolor 85%) 0 0 / 100% 2px no-repeat,
+      transparent;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
 }
 .home-title {
   color: $textcolor;
@@ -22,8 +37,6 @@ div.home-image-blocks {
 }
 div.home-title-block {
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 h3.home-image-caption {
     font-family: Arial;

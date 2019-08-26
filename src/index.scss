@@ -14,9 +14,13 @@ div[class^="block-"] {
     padding: 5px;
   }
 }
-div[class$="-text-block"], hr[class$="-divider"] {
-    padding: 20px;
+div[class$="-text-block"] {
+    padding: 5px;
     font-size: 1.25em;
+}
+hr[class$="-divider"] {
+  margin: 0;
+  margin-bottom: 5px;
 }
 p[class$="-text"] {
     font-family: Arial;
@@ -28,21 +32,25 @@ img[class$="-image"]:not(.home-image) {
     font-family: Arial;
     font-stretch: condensed;
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
     color: $brandcolor;
+    text-transform: uppercase;
 }
 h2[class$="-title"] {
-    font-size: 5rem;
-}
-h3[class$="-title"] {
     font-size: 4rem;
 }
-h4[class$="-title"] {
+h3[class$="-title"] {
     font-size: 3rem;
+    color: $textcolor;
+}
+h4[class$="-title"] {
+    font-size: 2rem;
+    color: $textcolor;
 }
 h5[class$="-title"] {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: $textcolor;
 }
 blockquote {
     background-color: $quotecolor;
@@ -51,9 +59,15 @@ blockquote {
     padding: 10px;
     max-width: 90%;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 0.9em;
+    font-style: italic;
     p {
       margin: 0;
+      &:nth-of-type(2) {
+        text-align: right;
+        margin: 5px 10px;
+        font-style: normal;
+      }
     }
 }
