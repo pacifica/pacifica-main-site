@@ -18,16 +18,16 @@ div.logo-title-block {
   text-align: center;
   cursor: pointer;
   & > h1 {
-    color: $titlecolor;
+    color: $textcolor;
     margin: 0;
     line-height: 1;
   }
   & > h5 {
     color: $textcolor;
     font-size: 0.75em;
-    letter-spacing: 1em;
+    letter-spacing: 1.5em;
     margin: 0;
-    margin-left: 1em;
+    margin-left: 0.75em;
     line-height: 1;
     text-transform: uppercase;
   }

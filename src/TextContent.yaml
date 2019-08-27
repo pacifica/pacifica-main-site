@@ -39,8 +39,8 @@ homepage:
     quality and reuse of their research. Pacifica is open source and
     allows contributions from development and operator teams.
 header:
-  title: Pacifica
-  subtitle: Software
+  title: PACIFICA
+  subtitle: SOFTWARE
 aboutpage:
   title: About
   content:
@@ -134,16 +134,21 @@ docspage:
   title: Documentation
   content:
     - |
-      We should document things and here are some references to where
-      we have done some of that.
-    - title: Developer and User Documentation
+      Documentation is a primary product of Pacifica. We are continually
+      improving the documentation for all stakeholders in Pacifica. The
+      Documentation is broken up into sections by the roles folks
+      traditionally fall into when interacting with Pacifica. These are
+      by no means complete collections please feel free to submit
+      [Github Issue](https://github.com/pacifica/pacifica/issues) about
+      missing, inaccurate or mistakes in the documentation.
+    - title: Developer and User Docs
       content:
         - |
           Developer and user documentation are managed in the Github
           Wiki of the primary
           [Pacifica](https://github.com/pacifica/pacifica/wiki)
           repository.
-    - title: Code and API Documentation
+    - title: Code and API Docs
       content:
         - |
           Software API documentation is developed in Sphinx and are
@@ -170,7 +175,16 @@ getitpage:
   content:
     - |
       Pacifica distributes software via several third party solutions
-      supporting open source software projects.
+      supporting open source software projects. Those third party solutions
+      support developers in their respective software ecosystems.
+
+        * [Docker Hub](https://hub.docker.com) for Container Images
+        * [PyPi](https://www.pypi.org) for Python Package deployment
+        * [Github](https://www.github.com) for Source Code Control
+    - |
+      Additional software distribution mechanisms will be added when Pacifica
+      supported software required to be distributed on those platforms for
+      ease of users and developers.
 dockerpage:
   title: Docker Images
   content:
