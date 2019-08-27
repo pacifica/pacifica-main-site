@@ -17,7 +17,8 @@ homepage:
     - |
       Collaborate. Share. Integrate. Build. Pacifica supports the
       scientific data lifecycle.
-    - *template_title_text
+    - Checkout Pacifica Version 1.0 on GitHub or Docker and try it
+      out!
   datamgmtblock: |
     Scientific Data Management systems for research and development
     institutions need to provide uncomplicated solutions to meet
@@ -38,8 +39,8 @@ homepage:
     quality and reuse of their research. Pacifica is open source and
     allows contributions from development and operator teams.
 header:
-  title: Pacifica
-  subtitle: Software
+  title: PACIFICA
+  subtitle: SOFTWARE
 aboutpage:
   title: About
   content:
@@ -59,55 +60,51 @@ aboutpage:
         - |
           The challenge is defined within the nexus of a large institution's
           operating model, and the data policies the institution is required
-          to follow.
-        - title: DOE Data Management Policy
+          to follow. The DOE Data Management policy covers a lot, but we will
+          only highlight the guiding principles here.
+        - title: Effective Data Management
           content:
             - |
-              The DOE Data Management policy covers a lot, but we will only highlight
-              the guiding principles here.
-            - title: Effective Data Management
-              content:
-                - |
-                  > Effective data management has the potential to increase the pace of
-                  > scientific discovery and promote more efficient and effective use of
-                  > government funding and resources. Data management planning should be
-                  > an integral part of research planning.
-                  >
-                  > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+              > Effective data management has the potential to increase the pace of
+              > scientific discovery and promote more efficient and effective use of
+              > government funding and resources. Data management planning should be
+              > an integral part of research planning.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
 
-                  Pacifica addresses these challenges by offering an effective mechanism
-                  for data sharing, thus maximizing the impact of research across all
-                  participating organizations.
-            - title: Sharing Proves Integrity
-              content:
-                - |
-                  > Sharing and preserving data are central to protecting the integrity of
-                  > science by facilitating validation of results and to advancing science
-                  > by broadening the value of research data to disciplines other than the
-                  > originating one and to society at large. To the greatest extent, with
-                  > the fewest constraints possible, and consistent with the requirements
-                  > and other principles stated in this document, data sharing should make
-                  > digital research data available to and useful for the scientific
-                  > community, industry, and the public.
-                  >
-                  > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+              Pacifica addresses these challenges by offering an effective mechanism
+              for data sharing, thus maximizing the impact of research across all
+              participating organizations.
+        - title: Sharing Proves Integrity
+          content:
+            - |
+              > Sharing and preserving data are central to protecting the integrity of
+              > science by facilitating validation of results and to advancing science
+              > by broadening the value of research data to disciplines other than the
+              > originating one and to society at large. To the greatest extent, with
+              > the fewest constraints possible, and consistent with the requirements
+              > and other principles stated in this document, data sharing should make
+              > digital research data available to and useful for the scientific
+              > community, industry, and the public.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
 
-                  Sharing scientific data with the public proves the scientific work being done
-                  is of the highest integrity. A dependency of this is to share the software
-                  system managing the data in an open source model. Without an open source 
-                  software model the integrity of the data and the science could be suspect.
-                  This is why Pacifica is an open source software project.
-            - title: Preserve What You Can
-              content:
-                - |
-                  > Not all data need to be shared or preserved. The costs and benefits of
-                  > doing so should be considered in data management planning.
-                  >
-                  > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+              Sharing scientific data with the public proves the scientific work being done
+              is of the highest integrity. A dependency of this is to share the software
+              system managing the data in an open source model. Without an open source 
+              software model the integrity of the data and the science could be suspect.
+              This is why Pacifica is an open source software project.
+        - title: Preserve What You Can
+          content:
+            - |
+              > Not all data need to be shared or preserved. The costs and benefits of
+              > doing so should be considered in data management planning.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
 
-                  The task of sharing and preserving all data generated by open science is
-                  costly, especially for small projects. The overhead required to adhere to
-                  meeting the policy must be addressed by the supporting institution.
+              The task of sharing and preserving all data generated by open science is
+              costly, especially for small projects. The overhead required to adhere to
+              meeting the policy must be addressed by the supporting institution.
 historypage:
   title: History
   content:
@@ -137,16 +134,21 @@ docspage:
   title: Documentation
   content:
     - |
-      We should document things and here are some references to where
-      we have done some of that.
-    - title: Developer and User Documentation
+      Documentation is a primary product of Pacifica. We are continually
+      improving the documentation for all stakeholders in Pacifica. The
+      Documentation is broken up into sections by the roles folks
+      traditionally fall into when interacting with Pacifica. These are
+      by no means complete collections please feel free to submit
+      [Github Issue](https://github.com/pacifica/pacifica/issues) about
+      missing, inaccurate or mistakes in the documentation.
+    - title: Developer and User Docs
       content:
         - |
           Developer and user documentation are managed in the Github
           Wiki of the primary
           [Pacifica](https://github.com/pacifica/pacifica/wiki)
           repository.
-    - title: Code and API Documentation
+    - title: Code and API Docs
       content:
         - |
           Software API documentation is developed in Sphinx and are
@@ -168,6 +170,46 @@ missionpage:
           emerging sponsor data challenges, while maintaining promises kept
           in the past. We will provide the platform to accelerate scientific
           research in directions never thought possible.
+getitpage:
+  title: Get it!
+  content:
+    - |
+      Pacifica distributes software via several third party solutions
+      supporting open source software projects. Those third party solutions
+      support developers in their respective software ecosystems.
+
+        * [Docker Hub](https://hub.docker.com) for Container Images
+        * [PyPi](https://www.pypi.org) for Python Package deployment
+        * [Github](https://www.github.com) for Source Code Control
+    - |
+      Additional software distribution mechanisms will be added when Pacifica
+      supported software required to be distributed on those platforms for
+      ease of users and developers.
+dockerpage:
+  title: Docker Images
+  content:
+    - |
+      Docker images are served from [Docker Hub](https://hub.docker.com/).
+      Some services require multiple images. The services that handle raw
+      data coming into Pacifica have two services a backend and frontend.
+      Any dependent services are required to be started and working before
+      starting the Pacifica services.
+    - |
+      The Core Pacifica services all have `docker-compose.yml` files that
+      describe the dependant services and their configurations. You can also
+      checkout the big `docker-compose.yml` file bundled with the Pacifica
+      [Version 1.0](https://github.com/pacifica/pacifica/tree/v1.0.0) that
+      describes full system and some supporting testing Jupyter Notebooks.
+pythonpage:
+  title: PyPi Download
+  content:
+    - |
+      Pacifica is available through the Python Package Index
+      ([PyPi](http://www.pypi.org)). This
+      is the standard place for users to download Python software from.
+      The Python modules are located in a `pacifica` namespace and are
+      documented with [Sphinx](http://www.sphinx-doc.org/) and served on
+      [ReadTheDocs](https://readthedocs.org).
 footer: |
   [Pacifica](https://pacifica.github.io/about) is a project created and
   maintained by [David Brown](https://github.com/dmlb2000). The Pacifica

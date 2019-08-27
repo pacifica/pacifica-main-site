@@ -3,7 +3,7 @@ import React from 'react'
 import Section from '../Section'
 import getText from '../Utils'
 
-const imageSrc = require('../assets/mission-image-400x200.png')
+const imageSrc = require('../assets/mission-image-1000x1000.png')
 
 const Mission = function Mission () {
   return (

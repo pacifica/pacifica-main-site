@@ -1,7 +1,7 @@
 import { LinkContainer } from 'react-router-bootstrap'
 import React from 'react'
 import getText from '../Utils'
-import logo from '../assets/Pacifica-64x64-darkgrey.png'
+import logo from '../assets/Pacifica-Border-96x96.png'
 // I'm not sure why this isn't sorting properly
 // eslint-disable-next-line sort-imports
 import NavDropdown from './NavDropdown.jsx'

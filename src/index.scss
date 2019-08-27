@@ -43,14 +43,17 @@ h2[class$="-title"] {
 h3[class$="-title"] {
     font-size: 3rem;
     color: $textcolor;
+    font-weight: normal;
 }
 h4[class$="-title"] {
     font-size: 2rem;
     color: $textcolor;
+    font-weight: normal;
 }
 h5[class$="-title"] {
     font-size: 1.5rem;
     color: $textcolor;
+    font-weight: normal;
 }
 blockquote {
     background-color: $quotecolor;
