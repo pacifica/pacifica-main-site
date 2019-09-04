@@ -15,12 +15,11 @@ div[class^="block-"] {
   }
 }
 div[class$="-text-block"] {
-    padding: 5px;
+    padding: 5px 0 10px;
     font-size: 1.25em;
 }
 hr[class$="-divider"] {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 0 0 1rem;
 }
 p[class$="-text"] {
     font-family: Arial;
@@ -32,7 +31,7 @@ img[class$="-image"]:not(.home-image) {
     font-family: Arial;
     font-stretch: condensed;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 10px 0;
     font-weight: bold;
     color: $brandcolor;
     text-transform: uppercase;

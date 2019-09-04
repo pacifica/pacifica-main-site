@@ -10,24 +10,23 @@ div.root-float {
   margin: 0 auto;
 }
 img.logo {
-  margin-left: 48px;
-  margin-right: 16px;
+  margin: 0 16px;
+  width: 80px;
+  object-fit: contain;
 }
 div.logo-title-block {
   font-family: 'Conthrax';
-  text-align: center;
   cursor: pointer;
+  color: $titlecolor;
   & > h1 {
-    color: $textcolor;
     margin: 0;
     line-height: 1;
   }
   & > h5 {
-    color: $textcolor;
     font-size: 0.75em;
-    letter-spacing: 1.5em;
+    letter-spacing: 1.67em;
     margin: 0;
-    margin-left: 0.75em;
+    margin-left: 0.2em;
     line-height: 1;
     text-transform: uppercase;
   }
@@ -36,7 +35,7 @@ div.logo-img-block {
   cursor: pointer;
 }
 div.logo-block {
-  height: 128px;
+  height: 96px;
   max-width: 580px;
   display: flex;
   flex-direction: row;
@@ -47,6 +46,7 @@ div.break-bar {
   height: 42px;
   width: 100%;
   background-color: $titlecolor;
+  margin-bottom: 11px;
 }
 .dropdown-toggle, .dropdown-item {
   font-family: Arial;

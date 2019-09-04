@@ -22,16 +22,6 @@ const Impact = function Impact () {
           <Row>
             <Col>
               <div className="impact-image-block">
-                <Link to="/leaders">
-                  <img
-                    className="home-image"
-                    src={decision}
-                  />
-                </Link>
-              </div>
-            </Col>
-            <Col>
-              <div className="impact-image-block">
                 <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                   <img
                     className="home-image"
@@ -63,30 +53,23 @@ const Impact = function Impact () {
           </Row>
           <Row float="center">
             <Col>
-              <Link to="/leaders">
+              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Decision Makers'}
+                  DEVELOPERS
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Developers'}
+                  SCIENTISTS
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Scientists'}
-                </h3>
-              </Link>
-            </Col>
-            <Col>
-              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
-                <h3 className="home-image-caption">
-                  {'Operators'}
+                  OPERATORS
                 </h3>
               </Link>
             </Col>

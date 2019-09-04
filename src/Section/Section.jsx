@@ -18,7 +18,7 @@ const Section = function Section (data, level, prefix = 'home', imageSrc = null)
       className={`block-${level}`}
       key={`block-${level}-${Math.random()}`}
     >
-      <hr className={`${prefix}-divider`} />
+      {level > 2 && <hr className={`${prefix}-divider`} />}
       {imageComponent}
       {React.createElement(`h${level}`, {
         className: `${prefix}-title`,
