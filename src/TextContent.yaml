@@ -1,17 +1,4 @@
-title_loren_ipsum: &template_title_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-  consectetur.
-short_loren_ipsum: &template_short_20_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut
-  orci sit amet purus gravida euismod. Proin tempor, nibh at.
-loren_ipsum: &template_full_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-  aliquip ex ea commodo consequat. Duis aute irure dolor in
-  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.
+---
 homepage:
   carousel:
     - |
@@ -149,12 +136,12 @@ docspage:
       Documentation is broken up into sections by the roles folks
       traditionally fall into when interacting with Pacifica. These are
       by no means complete collections please feel free to submit
-      [Github Issue](https://github.com/pacifica/pacifica/issues) about
+      [GitHub Issue](https://github.com/pacifica/pacifica/issues) about
       missing, inaccurate or mistakes in the documentation.
     - title: Developer and User Docs
       content:
         - |
-          Developer and user documentation are managed in the Github
+          Developer and user documentation are managed in the GitHub
           Wiki of the primary
           [Pacifica](https://github.com/pacifica/pacifica/wiki)
           repository.
@@ -178,6 +165,19 @@ missionpage:
       emerging sponsor data challenges, while maintaining promises kept
       in the past. We will provide the platform to accelerate scientific
       research in directions never thought possible.
+    - title: Open Everything
+      content:
+        - |
+          The path to success is being open about everything. This
+          challenge is required to be successful in community with
+          other institutions. There is scope that institutions can
+          maintain proprietary ownership over. However, communicating
+          succinctly the challenges facing an institution in the open
+          will manifest solutions supported by the community at large.
+        - |
+          Open everything starts with the software and its immediate
+          surrounding ecosystem. This includes documentation, architecture,
+          design, deployment, development, deployment, etc.
 getitpage:
   title: Get it!
   content:
@@ -188,7 +188,7 @@ getitpage:
 
         * [Docker Hub](https://hub.docker.com) for Container Images
         * [PyPi](https://www.pypi.org) for Python Package deployment
-        * [Github](https://www.github.com) for Source Code Control
+        * [GitHub](https://www.github.com) for Source Code Control
     - |
       Additional software distribution mechanisms will be added when Pacifica
       supported software required to be distributed on those platforms for
@@ -218,6 +218,9 @@ pythonpage:
       The Python modules are located in a `pacifica` namespace and are
       documented with [Sphinx](http://www.sphinx-doc.org/) and served on
       [ReadTheDocs](https://readthedocs.org).
+      The [Travis](https://travis-ci.org) CI/CD pipelines are responsible
+      for deploying the software releases from
+      [GitHub](https://github.com/pacifica) to PyPi.
 footer: |
   [Pacifica](https://pacifica.github.io/about) is a project created and
   maintained by [David Brown](https://github.com/dmlb2000). The Pacifica

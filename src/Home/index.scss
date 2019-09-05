@@ -1,5 +1,8 @@
 @import '../variables';
 
+$maxwidth: 85%;
+$sectionmargin: 50px;
+
 div.home-root {
     max-width: 1024px;
     margin: 0 auto;
@@ -36,6 +39,8 @@ div.home-image-blocks {
 }
 div.home-title-block {
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 h3.home-image-caption {
     font-family: Arial;
@@ -43,6 +48,12 @@ h3.home-image-caption {
     color: $textcolor;
     text-align: center;
     padding-top: 20px;
+}
+div.home-root div[class$="-root"] {
+    max-width: $maxwidth;
+    margin: 0 auto;
+    margin-top: $sectionmargin;
+    margin-bottom: $sectionmargin;
 }
 div.datamgmt-image-block {
     width: 152px;
