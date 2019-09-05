@@ -12,7 +12,6 @@ const Home = function Home () {
       <div className="home-carousel">
         <HomeCarousel />
       </div>
-      <hr className="home-divider" />
       <div className="home-datamgmt">
         <DataMgmt />
       </div>

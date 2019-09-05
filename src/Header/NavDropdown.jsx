@@ -45,9 +45,9 @@ const NavDropdown = function NavDropdown () {
               to="/docs"
             />,
             <DropdownItem
-              key="Decision Makers"
-              name="Decision Makers"
-              to="/leaders"
+              key="Quick Start"
+              name="Quick Start"
+              to="https://github.com/pacifica/pacifica/blob/v1.0.0/DOCKER_COMPOSE.md"
             />,
             <DropdownItem
               key="Developers"

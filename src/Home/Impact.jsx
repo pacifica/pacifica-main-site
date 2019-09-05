@@ -1,7 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from '../Link.jsx'
 import React from 'react'
-import decision from '../assets/decision_icon.png'
 import develop from '../assets/developers_icon.png'
 import getText from '../Utils'
 import operator from '../assets/operations_icon.png'
@@ -20,16 +19,6 @@ const Impact = function Impact () {
       <div className="home-image-blocks">
         <Container>
           <Row>
-            <Col>
-              <div className="impact-image-block">
-                <Link to="/leaders">
-                  <img
-                    className="home-image"
-                    src={decision}
-                  />
-                </Link>
-              </div>
-            </Col>
             <Col>
               <div className="impact-image-block">
                 <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
@@ -63,30 +52,23 @@ const Impact = function Impact () {
           </Row>
           <Row float="center">
             <Col>
-              <Link to="/leaders">
+              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Decision Makers'}
+                  {`DEVELOPERS`}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Developers'}
+                  {`SCIENTISTS`}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {'Scientists'}
-                </h3>
-              </Link>
-            </Col>
-            <Col>
-              <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
-                <h3 className="home-image-caption">
-                  {'Operators'}
+                  {`OPERATORS`}
                 </h3>
               </Link>
             </Col>
