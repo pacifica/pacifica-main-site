@@ -8,7 +8,6 @@ import Getit from './Getit'
 import Header from './Header'
 import History from './History'
 import Home from './Home'
-import Leaders from './Leaders'
 import Mission from './Mission'
 import Python from './Python'
 import React from 'react'
@@ -21,7 +20,6 @@ const App = function App () {
     docs: Docs,
     getit: Getit,
     history: History,
-    leaders: Leaders,
     mission: Mission,
     python: Python
   }

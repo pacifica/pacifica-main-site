@@ -1,7 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from '../Link.jsx'
 import React from 'react'
-import decision from '../assets/decision_icon.png'
 import develop from '../assets/developers_icon.png'
 import getText from '../Utils'
 import operator from '../assets/operations_icon.png'
@@ -55,21 +54,21 @@ const Impact = function Impact () {
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  DEVELOPERS
+                  {`DEVELOPERS`}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  SCIENTISTS
+                  {`SCIENTISTS`}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  OPERATORS
+                  {`OPERATORS`}
                 </h3>
               </Link>
             </Col>

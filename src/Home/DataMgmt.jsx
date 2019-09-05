@@ -46,17 +46,17 @@ const DataMgmt = function DataMgmt () {
           <Row float="center">
             <Col>
               <h3 className="home-image-caption">
-                COLLABORATION
+                {`COLLABORATION`}
               </h3>
             </Col>
             <Col>
               <h3 className="home-image-caption">
-                SHARING
+                {`SHARING`}
               </h3>
             </Col>
             <Col>
               <h3 className="home-image-caption">
-                VELOCITY
+                {`VELOCITY`}
               </h3>
             </Col>
           </Row>
