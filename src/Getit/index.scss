@@ -1,7 +1,9 @@
+@import '../variables';
+
 .Getit {
   .Getit-image {
     float: right;
-    width: 390px;
+    width: $imagesize;
     height: 100%;
     margin: 23px 0 10px 2rem;
     object-fit: contain;

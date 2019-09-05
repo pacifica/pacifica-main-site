@@ -1,7 +1,9 @@
+@import '../variables';
+
 .Python {
   .Python-image {
     float: right;
-    width: 400px;
+    width: $imagesize;
     height: 100%;
     margin: 10px;
     object-fit: contain;
