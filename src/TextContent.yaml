@@ -4,8 +4,7 @@ homepage:
     - |
       Collaborate. Share. Integrate. Build. Pacifica supports the
       scientific data lifecycle.
-    - Checkout Pacifica Version 1.0 on GitHub or Docker and try it
-      out!
+    - Check out Pacifica Version 1.0 on GitHub on Docker!
   datamgmtblock: |
     Scientific Data Management systems for research and development
     institutions need to provide uncomplicated solutions to meet
@@ -185,7 +184,7 @@ getitpage:
       Pacifica distributes software via several third party solutions
       supporting open source software projects. Those third party solutions
       support developers in their respective software ecosystems.
-
+    - |
         * [Docker Hub](https://hub.docker.com) for Container Images
         * [PyPi](https://www.pypi.org) for Python Package deployment
         * [GitHub](https://www.github.com) for Source Code Control
