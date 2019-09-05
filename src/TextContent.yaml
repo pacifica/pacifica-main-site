@@ -55,7 +55,7 @@ aboutpage:
       Information about the state of data can be captured separately
       from manipulating files. This provides complete provenance
       capture through generic interfaces for custom workflows.
-    - title: The Data Management Challenge
+    - title: Data Challenge
       content:
         - |
           The challenge is defined within the nexus of a large institution's
