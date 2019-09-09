@@ -8,11 +8,12 @@ const imageSrc = require('../assets/Docker-Logo.png')
 const Docker = function Docker () {
   return (
     <div className="Docker">
-      {
-        // We are starting with h2 that's why 2
-        // eslint-disable-next-line no-magic-numbers
-        Section(getText().dockerpage, 2, 'Docker', imageSrc)
-      }
+      <Section
+        data={getText().dockerpage}
+        imageSrc={imageSrc}
+        level={2}
+        prefix="Docker"
+      />
     </div>
   )
 }

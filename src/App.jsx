@@ -25,7 +25,9 @@ const App = function App () {
   }
   const routeList = []
   for (const [
+    // eslint-disable-next-line no-unused-vars
     key,
+    // eslint-disable-next-line no-unused-vars
     value
   ] of Object.entries(compPathMap)) {
     routeList.push((
