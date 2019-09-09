@@ -1,13 +1,7 @@
-const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  devServer: {
-    compress: true,
-    contentBase: path.join(__dirname, 'dist'),
-    historyApiFallback: true,
-    port: 9000
-  },
   entry: './src/index.jsx',
   module: {
     rules: [
@@ -32,8 +26,8 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader'
+        loader: 'style-loader!css-loader!sass-loader',
+        test: /\.scss$/u
       }
     ]
   },
@@ -42,8 +36,10 @@ module.exports = {
       filename: './index.html',
       template: './src/index.html'
     }),
-    new CopyWebpackPlugin([{
-      from: 'public'
-    }])
+    new CopyWebpackPlugin([
+      {
+        from: 'public'
+      }
+    ])
   ]
 }

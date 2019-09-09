@@ -96,6 +96,13 @@ contactpage:
   title: Contact
   content:
     - |
+      Pacifica is more than willing to answer questions about the project,
+      current state and future directions. Pacifica is run like any open
+      source project, you can start by creating a
+      [GitHub Issue](https://github.com/pacifica/pacifica/issues). We'll
+      try to answer your questions to the best of our ability in a timely
+      manor.
+    - |
       Pacifica's stewardship is currently centered at
       [Pacific Northwest National Laboratory](https://www.pnnl.gov).
       If you have questions or would like to start a conversation
