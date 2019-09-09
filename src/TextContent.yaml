@@ -38,6 +38,7 @@ aboutpage:
       system for affective long term storage. Additional services are
       provided to stage data in and out of the HSM for facilitating
       workflows.
+    - |
       Information about the state of data can be captured separately
       from manipulating files. This provides complete provenance
       capture through generic interfaces for custom workflows.
