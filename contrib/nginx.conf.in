@@ -1,0 +1,43 @@
+error_log @@WORKDIR@@/error.log;
+pid @@WORKDIR@@/nginx.pid;
+daemon off;
+events {
+        worker_connections 768;
+        # multi_accept on;
+}
+
+http {
+        sendfile on;
+        tcp_nopush on;
+        tcp_nodelay on;
+        keepalive_timeout 65;
+        types_hash_max_size 2048;
+        server_tokens off;
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+        gzip on;
+        map $http_upgrade $connection_upgrade {
+                default upgrade;
+                '' close;
+        }
+        server {
+                listen 8080;
+                listen [::]:8080;
+                root @@WORKDIR@@/dist;
+                index index.html index.htm index.nginx-debian.html;
+
+                access_log @@WORKDIR@@/access.log;
+                client_body_temp_path @@WORKDIR@@/temp_client;
+                fastcgi_temp_path @@WORKDIR@@/temp_fastcgi;
+                proxy_temp_path @@WORKDIR@@/temp_proxy;
+                scgi_temp_path @@WORKDIR@@/scgi_proxy;
+                uwsgi_temp_path @@WORKDIR@@/uwsgi_proxy;
+                server_name pacifica.github.io;
+
+                error_page 404 /404.html;
+
+                location = /404.html {
+                        internal;
+                }
+        }
+}
