@@ -15,14 +15,14 @@ homepage:
   solveblock: |
     Open source does not end with the release of the source code.
     Complex problems require the community to share ideas, processes,
-    and support features to solve the requirements -- the evolution
+    and support features to solve the requirements -- the very evolution
     from open source, to open everything. Pacifica is governed by an
-    open everything community.
+    open-everything community.
   impactblock: |
     Pacifica seeks to enable institutions to reduce risk while
-    accelerating scientific impact for all its users. Pacifica has
-    interfaces to allow scientists to automate workflow, improving
-    quality and reuse of their research. Pacifica is open source and
+    accelerating scientific impact for all of its users. Pacifica's 
+    interfaces allow scientists to automate workflow, thus improving the
+    quality and reuse of their research. As open source software, Pacifica
     allows contributions from development and operator teams.
 header:
   title: PACIFICA
