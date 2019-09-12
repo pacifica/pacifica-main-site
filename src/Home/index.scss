@@ -28,6 +28,10 @@ div.carousel-caption {
   height: 400px;
   object-fit: cover;
 }
+div.home-root div[class$="-text-block"] {
+  max-width: 90%;
+  margin: 0 auto;
+}
 .home-title {
   color: $textcolor;
   text-align: center;
