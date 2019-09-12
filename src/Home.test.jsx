@@ -1,6 +1,7 @@
-import App from './App'
+import Home from './Home'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 test(
   'renders without crashing',
@@ -8,8 +9,10 @@ test(
     expect.hasAssertions()
     const div = document.createElement('div')
     ReactDOM.render(
-      <App />,
-      div
+      <Router>
+        <Home />
+      </Router>
+      , div
     )
     expect(div).toBeDefined()
     ReactDOM.unmountComponentAtNode(div)
