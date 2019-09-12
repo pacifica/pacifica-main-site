@@ -26,40 +26,43 @@ exports.register = function register (config) {
   // eslint-disable-next-line no-process-env
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
-    // eslint-disable-next-line no-process-env
-    const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href)
+    const publicUrl = new URL(
+      // eslint-disable-next-line no-process-env
+      process.env.PUBLIC_URL,
+      window.location.href
+    )
 
-    /*
-     * Our service worker won't work if PUBLIC_URL is on a different origin
-     * from what our page is served on. This might happen if a CDN is used to
-     * serve assets; see https://github.com/facebook/create-react-app/issues/2374
-     */
     if (publicUrl.origin !== window.location.origin) {
       return
     }
 
-    window.addEventListener('load', () => {
-      // eslint-disable-next-line no-process-env
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`
+    window.addEventListener(
+      'load',
+      () => {
+        // eslint-disable-next-line no-process-env
+        const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`
 
-      if (isLocalhost) {
-        // This is running on localhost. Let's check if a service worker still exists or not.
-        checkValidServiceWorker(swUrl, config)
+        if (isLocalhost) {
+          // This is running on localhost. Let's check if a service worker still exists or not.
+          checkValidServiceWorker(
+            swUrl,
+            config
+          )
 
-        /*
-         * Add some additional logging to localhost, pointing developers to the
-         * service worker/PWA documentation.
-         */
-        navigator.serviceWorker.ready.then(() => {
-          // eslint-disable-next-line no-console
-          console.log('This web app is being served cache-first by a service ' +
+          navigator.serviceWorker.ready.then(() => {
+            // eslint-disable-next-line no-console
+            console.log('This web app is being served cache-first by a service ' +
               'worker. To learn more, visit https://bit.ly/CRA-PWA')
-        })
-      } else {
-        // Is not localhost. Just register service worker
-        registerValidSW(swUrl, config)
+          })
+        } else {
+          // Is not localhost. Just register service worker
+          registerValidSW(
+            swUrl,
+            config
+          )
+        }
       }
-    })
+    )
   }
 }
 
@@ -98,7 +101,10 @@ const registerValidSW = function registerValidSW (swUrl, config) {
     })
     .catch((error) => {
       // eslint-disable-next-line no-console
-      console.error('Error during service worker registration:', error)
+      console.error(
+        'Error during service worker registration:',
+        error
+      )
     })
 }
 
@@ -123,7 +129,10 @@ const checkValidServiceWorker = function checkValidServiceWorker (swUrl, config)
         })
       } else {
         // Service worker found. Proceed as normal.
-        registerValidSW(swUrl, config)
+        registerValidSW(
+          swUrl,
+          config
+        )
       }
     })
     .catch(() => {

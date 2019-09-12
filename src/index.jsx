@@ -5,7 +5,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const wrapper = document.getElementById('root')
-ReactDOM.render(<App />, wrapper)
+ReactDOM.render(
+  <App />,
+  wrapper
+)
 
 /*
  * If you want your app to work offline and load faster, you can change
