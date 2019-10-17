@@ -114,7 +114,7 @@ historypage:
   content:
     - |
       Pacifica was created from a collaboration in the
-      [United States National Laboratory](https://en.wikipedia.org/wiki/United_States_Department_of_Energy_national_laboratories)
+      [United States National Laboratory](https://www.energy.gov/science/science-innovation/office-science-national-laboratories)
       system. The Environmental Molecular Sciences Laboratory ([EMSL](https://www.emsl.pnnl.gov))
       collaborated with its host institution Pacific Northwest National Laboratory
       ([PNNL](https://www.pnnl.gov)) to help manage the scientific data generated
@@ -135,7 +135,7 @@ historypage:
       developing an institutional data management system for open research
       science.
 docspage:
-  title: Documentation
+  title: Documents
   content:
     - |
       Documentation is a primary product of Pacifica. We are continually
