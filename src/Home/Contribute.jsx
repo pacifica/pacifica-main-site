@@ -3,7 +3,7 @@ import Link from '../Link.jsx'
 import React from 'react'
 import doe from '../assets/doe_logo.png'
 import emsl from '../assets/emsl_logo.png'
-import pnnl from '../assets/pnnl_logo.png'
+import pnnl from '../assets/pnnl_logo_big.png'
 
 const Contribute = function Contribute () {
   return (
