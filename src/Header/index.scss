@@ -1,0 +1,159 @@
+@import '../variables';
+
+@font-face {
+  font-family: 'Conthrax';
+  src: url("../assets/conthrax-sb.ttf");
+}
+
+div.root-float {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+img.logo {
+  margin: 0 16px;
+  width: 80px;
+  object-fit: contain;
+}
+div.logo-title-block {
+  font-family: 'Conthrax';
+  cursor: pointer;
+  color: $titlecolor;
+  & > h1 {
+    margin: 0;
+    line-height: 1;
+  }
+  & > h5 {
+    font-size: 0.75em;
+    letter-spacing: 1.67em;
+    margin: 0;
+    margin-left: 0.2em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+div.logo-img-block {
+  cursor: pointer;
+}
+div.logo-block {
+  height: 96px;
+  max-width: 580px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+div.break-bar {
+  height: 42px;
+  width: 100%;
+  background-color: $titlecolor;
+}
+.dropdown-toggle, .dropdown-item {
+  font-family: Arial;
+}
+.dropdown-toggle {
+  color: $inversetextcolor;
+  font-weight: bold;
+}
+
+.pacifica-navbar {
+  height: 100%;
+  float: right;
+  .navbar {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    .pacifica-navbarBrand {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0 50px 0;
+      width: 100px;
+      margin: 0;
+      &:last-of-type {
+        margin-right: 34px;
+      }
+      &:hover {
+        .pacifica-dropdownMenu, .pacifica-dropdownArrow, .pacifica-dropdownOverline {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.pacifica-dropdownDivider.navbar-brand {
+  border-left: solid 1px $inversetextcolor;
+  margin: 0;
+}
+
+.pacifica-dropdown {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pacifica-dropdownMenu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 1px 1px 3px -1px $shadowcolor;
+    top: 100%;
+    background: $inversetextcolor;
+    width: 200px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid $inversetextcolor;
+      bottom: 100%;
+      left: 95px;
+    }
+    .pacifica-dropdownItem {
+      text-align: center;
+      padding: 0.25em 1em;
+      position: relative;
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      &:not(:last-child) {
+        &:after {
+          content: '';
+          position: absolute;
+          width: 150px;
+          bottom: -1px;
+          left: 25px;
+          border-bottom: 1px solid $textcolor;
+        }
+      }
+      &:hover {
+        background: $brandcolorlight;
+      }
+    }
+  }
+
+  & > :not(.pacifica-dropdownMenu).pacifica-dropdownItem {
+    color: $inversetextcolor;
+    text-transform: uppercase;
+  }
+
+  .pacifica-dropdownArrow {
+    display: none;
+    position: absolute;
+  }
+
+  .pacifica-dropdownOverline {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: $brandcolor;
+    bottom: 100%;
+    
+  }
+
+}

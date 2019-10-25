@@ -1,0 +1,14 @@
+@import '../variables';
+
+.Docker {
+  .Docker-image {
+    float: right;
+    width: $imagesize;
+    height: 100%;
+    margin: 10px;
+    object-fit: contain;
+  }
+  width: 80%;
+  margin: 0 auto;
+  margin-top: $headermargin;
+}

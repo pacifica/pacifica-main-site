@@ -4,16 +4,19 @@ node_js:
 - '10'
 cache: npm
 stages:
+- lint
 - test
 - deploy
 jobs:
   include:
+  - stage: lint
+    script: npm run eslint
   - stage: test
     script: npm run test
   - stage: deploy
     script: npm run build
     deploy:
-      local_dir: build
+      local_dir: dist
       provider: pages
       skip_cleanup: true
       github_token: "$GITHUB_TOKEN"

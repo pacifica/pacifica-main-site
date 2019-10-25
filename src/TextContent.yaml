@@ -1,47 +1,235 @@
 ---
-title_loren_ipsum: &template_title_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-  consectetur.
-short_loren_ipsum: &template_short_20_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut
-  orci sit amet purus gravida euismod. Proin tempor, nibh at.
-loren_ipsum: &template_full_text |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-  aliquip ex ea commodo consequat. Duis aute irure dolor in
-  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-  culpa qui officia deserunt mollit anim id est laborum.
 homepage:
-  titleblock: *template_title_text
-  datablock: *template_full_text
-  solveblock: *template_full_text
-  impactblock: *template_full_text
+  carousel:
+    - |
+      Collaborate. Share. Integrate. Build. Pacifica supports the
+      scientific data life cycle.
+    - Check out Pacifica Version 1.0 on GitHub on Docker!
+  datamgmtblock: |
+    Scientific data management systems for research and development
+    institutions need to provide uncomplicated solutions to meet
+    complicated problems. Pacifica offers institutions a
+    platform to collaboratively manage data between projects.
+    Pacifica can accelerate the scientific process by making search
+    and discovery tractable solutions.
+  solveblock: |
+    Open source does not end with the release of the source code.
+    Scientific data management requires a community to share ideas,
+    processes, and software to solve the problem -- the evolution
+    from open-source to open everything. Pacifica is governed by an
+    open everything community.
+  impactblock: |
+    Pacifica seeks to enable institutions to reduce risk while
+    accelerating scientific impact for its research. Pacifica's 
+    interfaces allow scientists to automate research improving its
+    quality. As open-source software, Pacifica
+    allows contributions from development and operator teams.
+header:
+  title: PACIFICA
+  subtitle: SOFTWARE
 aboutpage:
   title: About
   content:
-    - *template_full_text
-    - *template_full_text
-    - *template_full_text
-    - title: Section Title
+    - |
+      Pacifica is an institutional data management system that stores
+      both scientific data content as files and information about
+      those files.
+      The files are stored in a hierarchical storage management (HSM)
+      system for effective long-term storage. Additional services are
+      provided to stage data in and out of the HSM for facilitating
+      workflows.
+    - |
+      Information about the state of data can be captured separately
+      from manipulating files. This provides complete provenance
+      capture through generic interfaces for custom workflows.
+    - title: Data Challenge
       content:
-        - *template_full_text
-        - *template_full_text
-        - title: Subsection Title
+        - |
+          The challenge is defined within the nexus of a large institution's
+          operating model and the data policies the institution is required
+          to follow. The U.S. Departement of Energy's mata management policy
+          is extensive; however, we will only highlight the guiding
+          principles here.
+        - title: Effective Data Management
           content:
-            - *template_full_text
-docspage:
-  title: API Docs
+            - |
+              > Effective data management has the potential to increase the pace of
+              > scientific discovery and promote more efficient and effective use of
+              > government funding and resources. Data management planning should be
+              > an integral part of research planning.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+
+              Pacifica addresses this challenge by offering an institutional platform
+              for data sharing, thus adding the institution in data management planning.
+              This enables researchers to leverage each others data more effectively
+              while redusing cost and risk.
+        - title: Sharing Proves Integrity
+          content:
+            - |
+              > Sharing and preserving data are central to protecting the integrity of
+              > science by facilitating validation of results and to advancing science
+              > by broadening the value of research data to disciplines other than the
+              > originating one and to society at large. To the greatest extent, with
+              > the fewest constraints possible, and consistent with the requirements
+              > and other principles stated in this document, data sharing should make
+              > digital research data available to and useful for the scientific
+              > community, industry, and the public.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+
+              Sharing scientific data with the public proves the scientific work being done
+              is of the highest integrity. Without open-source software, the integrity of 
+              the data and the science could be suspect. That is why Pacifica is an open-source
+              software project.
+        - title: Preserve What You Can
+          content:
+            - |
+              > Not all data need to be shared or preserved. The costs and benefits of
+              > doing so should be considered in data management planning.
+              >
+              > [DOE Policy for Digital Research Data Management](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+
+              The task of sharing and preserving all data generated by open-science is
+              costly, especially for small projects. The overhead required to adhere to
+              meeting the policy must be addressed by the supporting institution.
+contactpage:
+  title: Contact
   content:
-    - *template_full_text
-    - title: Software Thing 1
+    - |
+      Pacifica's stewardship is currently centered at
+      [Pacific Northwest National Laboratory](https://www.pnnl.gov) (PNNL)
+      and the [Environmental Molecular Sciences Laboratory](https://www.emsl.pnnl.gov)
+      (EMSL). PNNL and EMSL are actively seeking collaborations with new stakeholders
+      and will answer questions about project direction, scope and future.
+    - |
+      Pacifica is run like any open-source project, you can start by creating a
+      [GitHub Issue](https://github.com/pacifica/pacifica/issues). We'll
+      answer your questions to the best of our ability.
+      If you have questions or would like to start a bigger conversation
+      please contact [David Brown](mailto:david.brown@pnnl.gov) at work,
+      on [GitHub](https://github.com/dmlb2000), or 
+      [personally](mailto:dmlb2000@gmail.com).
+historypage:
+  title: History
+  content:
+    - |
+      Pacifica was created from a collaboration in the
+      [U.S. Department of Energy Laboratory System](https://www.energy.gov/science/science-innovation/office-science-national-laboratories).
+      The Environmental Molecular Sciences Laboratory ([EMSL](https://www.emsl.pnnl.gov))
+      collaborated with its host institution - Pacific Northwest National Laboratory
+      ([PNNL](https://www.pnnl.gov)) - to help manage the scientific data generated
+      by researchers.
+    - |
+      EMSL is a 
+      [user facility](https://www.energy.gov/science/science-innovation/office-science-user-facilities)
+      sponsored by the Department of Energy ([DOE](https://www.energy.gov))
+      [Office of Science](https://www.energy.gov/science) Biological and
+      Environmental Research ([BER](https://www.energy.gov/science/ber/biological-and-environmental-research)).
+    - |
+      Pacifica was created by EMSL and PNNL in response to the
+      [DOE Data Management Policy](https://www.energy.gov/datamanagement/doe-policy-digital-research-data-management)
+      to transparently manage open research data. EMSL and
+      PNNL both have similar institutional challenges, the cost to a single
+      project to meet the policy is inefficient. As a result, EMSL and
+      PNNL chose to collaborate on developing an institutional data management
+      system for open research science.
+docspage:
+  title: Documents
+  content:
+    - |
+      Documentation is a primary product of Pacifica. We are continually
+      improving the documentation for all stakeholders. The
+      documentation is broken up into two sections:
+      
+       * The Developer and User documentation is for consumers of Pacifica software.
+       * The Code and API documentation is for developing new features in Pacifica.
+      
+      Improving documentation is continuous process, please feel
+      free to submit [GitHub Issue](https://github.com/pacifica/pacifica/issues)
+      about missing information, inaccurate content, or other mistakes in the documentation.
+    - title: Developer and User Docs
       content:
-        - *template_full_text
-    - title: Software Thing 2
+        - |
+          Developer and user documentation are located in the
+          [GitHub Wiki](https://github.com/pacifica/pacifica/wiki)
+          of the primary
+          [Pacifica](https://github.com/pacifica/pacifica)
+          repository.
+    - title: Code and API Docs
       content:
-        - *template_full_text
-    - title: Software Thing 3
+        - |
+          Software API documentation is developed in Sphinx and
+          supported by [ReadTheDocs](https://readthedocs.org). A full
+          listing of the documentation sites can be found
+          [here](https://github.com/pacifica/pacifica/wiki/Pacifica-Software-API-Documentation).
+missionpage:
+  title: Mission Vision
+  content:
+    - |
+      To provide institutions a foundation to support the scientific data
+      life cycle.
+    - |
+      Pacifica will become a focal point for institutions to collaborate, share
+      scientific data, integrate new technologies, and accelerate their
+      research portfolios. Pacifica will enable institutions to meet and exceed
+      emerging sponsor data challenges, while keeping past promises.
+      Pacifica will provide the platform to accelerate scientific
+      research in directions never thought possible.
+    - title: Open Everything
       content:
-        - *template_full_text
-footer: *template_short_20_text
+        - |
+          The path to success is being open about everything. In a
+          community of institutions, meeting this challenge is
+          required for success. Although institutions must maintain
+          proprietary ownership over some information, openly communicating
+          their challenges will manifest solutions for the whole community.
+        - |
+          Open everything starts with the software and its immediate
+          ecosystem. This includes documentation, architecture,
+          design, deployment, development, and deployment.
+getitpage:
+  title: Get it!
+  content:
+    - |
+      Pacifica distributes software via several third-party solutions
+      supporting open-source software projects. Those third-party solutions
+      support developers in their respective software ecosystems.
+    - |
+        * [Docker Hub](https://hub.docker.com) for container images
+        * [PyPi](https://www.pypi.org) for Python package deployment
+        * [GitHub](https://www.github.com) for source code control
+dockerpage:
+  title: Docker Images
+  content:
+    - |
+      Docker images are served from [Docker Hub](https://hub.docker.com/).
+      Some services require multiple images. The services that handle raw
+      data coming into Pacifica have two services; a backend and frontend.
+      Any dependent services are required to be working before
+      starting the Pacifica services.
+    - |
+      The core Pacifica services all have `docker-compose.yml` files that
+      describe the dependant services and their configurations. You can also
+      check out the `docker-compose.yml` file bundled with the Pacifica
+      [Version 1.0](https://github.com/pacifica/pacifica/tree/v1.0.0) that
+      describes the full system and some [Jupyter Notebooks](https://www.jupyter.org).
+pythonpage:
+  title: PyPi Download
+  content:
+    - |
+      Pacifica is available through the Python Package Index
+      ([PyPi](http://www.pypi.org)). This
+      is the standard repository for Python software.
+      The Python modules are located in a `pacifica` namespace,
+      documented with [Sphinx](http://www.sphinx-doc.org/), and served on
+      [ReadTheDocs](https://readthedocs.org).
+      The [Travis](https://travis-ci.org) continous integration and
+      deployment pipelines release the software from
+      [GitHub](https://github.com/pacifica) to PyPi.
+footer: |
+  [Pacifica](https://pacifica.github.io/about) is a project created and
+  maintained by [David Brown](https://github.com/dmlb2000). The Pacifica
+  website is licensed
+  [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and is
+  built using [React Bootstrap](https://react-bootstrap.github.io/).

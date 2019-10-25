@@ -1,0 +1,14 @@
+@import '../variables';
+
+.Mission {
+  .Mission-image {
+    float: right;
+    width: $imagesize;
+    height: 100%;
+    margin: 23px 0 10px 2rem;
+    object-fit: contain;
+  }
+  width: 80%;
+  margin: 0 auto;
+  margin-top: $headermargin;
+}
