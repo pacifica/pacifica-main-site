@@ -3,6 +3,10 @@ import * as serviceWorker from './serviceWorker'
 import App from './App.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-154816140-1')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 const wrapper = document.getElementById('root')
 ReactDOM.render(
