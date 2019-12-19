@@ -2,16 +2,21 @@ import App from './App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-test(
-  'renders without crashing',
+describe(
+  'test App Suite',
   () => {
-    expect.hasAssertions()
-    const div = document.createElement('div')
-    ReactDOM.render(
-      <App />,
-      div
+    it(
+      'renders without crashing',
+      () => {
+        expect.hasAssertions()
+        const div = document.createElement('div')
+        ReactDOM.render(
+          <App />,
+          div
+        )
+        expect(div).toBeDefined()
+        ReactDOM.unmountComponentAtNode(div)
+      }
     )
-    expect(div).toBeDefined()
-    ReactDOM.unmountComponentAtNode(div)
   }
 )
