@@ -5,8 +5,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
 
-ReactGA.initialize('UA-154816140-1')
-ReactGA.pageview(window.location.pathname + window.location.search)
+// This is standard webpack way of disabling code in development mode
+// eslint-disable-next-line no-process-env
+if (process.env.NODE_ENV === 'production') {
+  ReactGA.initialize('UA-154816140-1')
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 const wrapper = document.getElementById('root')
 ReactDOM.render(
