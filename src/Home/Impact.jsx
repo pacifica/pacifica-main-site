@@ -54,21 +54,21 @@ const Impact = function Impact () {
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {`DEVELOPERS`}
+                  {'DEVELOPERS'}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {`SCIENTISTS`}
+                  {'SCIENTISTS'}
                 </h3>
               </Link>
             </Col>
             <Col>
               <Link to="https://github.com/pacifica/pacifica/wiki/Pacifica-Developers">
                 <h3 className="home-image-caption">
-                  {`OPERATORS`}
+                  {'OPERATORS'}
                 </h3>
               </Link>
             </Col>

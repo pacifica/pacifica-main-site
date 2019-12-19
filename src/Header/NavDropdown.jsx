@@ -33,10 +33,7 @@ const NavDropdown = function NavDropdown () {
             />
           ]}
         />
-        {
-          // eslint-disable-next-line react/forbid-component-props
-          <Navbar.Brand className="pacifica-dropdownDivider" />
-        }
+        <Navbar.Brand name="pacifica-dropdownDivider" />
         <Dropdown
           items={[
             <DropdownItem
@@ -66,10 +63,7 @@ const NavDropdown = function NavDropdown () {
             />
           ]}
         />
-        {
-          // eslint-disable-next-line react/forbid-component-props
-          <Navbar.Brand className="pacifica-dropdownDivider" />
-        }
+        <Navbar.Brand name="pacifica-dropdownDivider" />
         <Dropdown
           items={[
             <DropdownItem
