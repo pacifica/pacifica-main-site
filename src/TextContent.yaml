@@ -187,7 +187,7 @@ missionpage:
         - |
           Open everything starts with the software and its immediate
           ecosystem. This includes documentation, architecture,
-          design, deployment, development, and deployment.
+          design, deployment, development, and operations.
 getitpage:
   title: Get it!
   content:
@@ -229,7 +229,8 @@ pythonpage:
       [GitHub](https://github.com/pacifica) to PyPi.
 footer: |
   [Pacifica](https://pacifica.github.io/about) is a project created and
-  maintained by [David Brown](https://github.com/dmlb2000). The Pacifica
-  website is licensed
+  maintained by many
+  [contributors](https://github.com/pacifica/pacifica/blob/master/CONTRIBUTORS.md).
+  The Pacifica website is licensed
   [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and is
   built using [React Bootstrap](https://react-bootstrap.github.io/).
