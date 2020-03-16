@@ -30,7 +30,7 @@ const Section = function Section ({ data, level, prefix, imageSrc, uniqueKey }) 
           className: `${prefix}-title`,
           key: `header-${level}`
         },
-        data.title
+        [data.title]
       )}
       <SectionContent
         content={data.content}
