@@ -1,10 +1,31 @@
 import './index.scss'
 import * as serviceWorker from './serviceWorker'
 import App from './App.jsx'
+import PageRouteMap from './PageRouteMap.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
+import ReactSEO from 'react-seo'
 
+const magicUrls = []
+let property = null
+for (property in PageRouteMap) {
+  if (Object.prototype.hasOwnProperty.call(
+    PageRouteMap,
+    property
+  )) {
+    magicUrls.push({
+      ajaxFunction: null,
+      isFullMatch: true,
+      url: `/${property}`,
+      urlParams: null
+    })
+  }
+}
+ReactSEO.startMagic(
+  magicUrls,
+  App
+)
 // This is standard webpack way of disabling code in development mode
 // eslint-disable-next-line no-process-env
 if (process.env.NODE_ENV === 'production') {

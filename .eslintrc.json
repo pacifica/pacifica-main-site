@@ -31,6 +31,7 @@
         "react/jsx-indent-props": "off",
         "react/jsx-max-depth": "off",
         "react/jsx-curly-brace-presence": "off",
+        "react/function-component-definition": "off",
         "max-len": ["error", { "code": 120 }]
     },
     "settings": {
