@@ -5,6 +5,7 @@ import Section from '../Section'
 import getText from '../Utils'
 
 const Contact = function Contact () {
+  const formTitle = 'Contact Form'
   return (
     <div className="Contact">
       <Section
@@ -13,7 +14,9 @@ const Contact = function Contact () {
         prefix="Contact"
       />
       <hr className="contactformheader-divider" />
-      <h3 class="Contact-title">Contact Form</h3>
+      <h3 className="Contact-title">
+        {formTitle}
+      </h3>
       <ContactForm />
     </div>
   )
