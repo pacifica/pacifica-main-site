@@ -1,0 +1,25 @@
+name: Node.js CI Deploy
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+      - name: Deploy Github Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master
+          FOLDER: dist
+          REPOSITORY_NAME: pacifica/pacifica.github.io
