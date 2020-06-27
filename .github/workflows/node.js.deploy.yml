@@ -19,7 +19,7 @@ jobs:
       - name: Deploy Github Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.REPO_TOKEN }}
           BRANCH: master
           FOLDER: dist
           REPOSITORY_NAME: pacifica/pacifica.github.io
